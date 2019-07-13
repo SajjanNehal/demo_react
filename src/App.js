@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+//import './App.css';
+//import './lightning.out.js';
+
+var cognitoId = "cognitoId";
+var lightningEndPointURI = "lightningEndPointURI";
+var outhtoken = "outhtoken";
+console.log(outhtoken);
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  // $Lightning.use("c:ABCIncApp", function() {
+  //   $Lightning.createComponent("c:ABCInc", {"cognitoId": cognitoId}, "lightning", function(cmp) {});
+  // },lightningEndPointURI,outhtoken)
+  <h2>i am {cognitoId}</h2>	
   );
 }
 
